@@ -1,0 +1,16 @@
+baseURL = "https://arthurreeder.tech"
+title = "My New Hugo Site"
+theme = "art"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
