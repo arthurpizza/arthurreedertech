@@ -2,8 +2,53 @@ body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #222;
   color: #fff;
+  max-width: 890px;
+  margin: auto;
 }
 
 body a {
   color: #fff;
+}
+
+blockquote {
+  background-color: #111;
+  padding: 10px 32px;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.hpcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.header img {
+  filter: invert(1);
+}
+
+.logo img {
+  max-width: 128px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header li {
+  display: inline;
+}
+
+.header ul {
+  padding: 0px;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hpcontent {
+  display: block;
+}
 }
