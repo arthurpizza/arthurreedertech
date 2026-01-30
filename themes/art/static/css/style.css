@@ -1,13 +1,24 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #222;
+  font-size: 20px;
+  background-color: #363636;
   color: #fff;
   max-width: 890px;
   margin: auto;
 }
 
 body a {
-  color: #fff;
+  color: #28abe1;
+  text-decoration: none;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #28abe1;
 }
 
 blockquote {
@@ -29,6 +40,7 @@ blockquote {
 
 .logo img {
   max-width: 128px;
+  margin-top: 16px;
 }
 
 .header {
@@ -47,8 +59,19 @@ blockquote {
   text-decoration: none;
 }
 
+footer p {
+  color: #28abe1;
+}
+
 @media screen and (max-width: 768px) {
-    .hpcontent {
-  display: block;
+  .hpcontent {
+    display: block;
+  }
+  .content {
+    padding: 16px;
+  }
+  footer {
+    text-align: center;
+  }
 }
 }
