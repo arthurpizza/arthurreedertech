@@ -1,8 +1,6 @@
 [build]
-  publish = "public"  # Adjust this path to match your Hugo's output directory.
-  command = "hugo_0.111"  # Use the desired Hugo version binary name.
+  command = "hugo"
+  publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.111"  # Specify the Hugo version you want to use.
-
-
+  HUGO_VERSION = "0.131.0"
