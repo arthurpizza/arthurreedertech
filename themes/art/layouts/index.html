@@ -1,67 +1,108 @@
 {{ partial "header.html" . }}
 
-<div class="homepage-hero">
-    <h2>
-        Friendly Neighborhood Technology Craftsman
-    </h2>
-    <div class="hpcontent">
-        <div class="left">
-            <h3>Website Design</h3>
-            <span>Custom, Responsive Web Solutions</span>
-            <ul>
-                <li>Crafted with open-source technologies</li>
-                <li>Mobile-first design approach</li>
-                <li>Emphasis on user experience and performance</li>
-                <li>Secure hosting and development practices</li>
-            </ul>
-        </div>
-        <div class="right">
-            <h3>Video Production</h3>
-            <span>Professional Storytelling through Visual Media</span>
-            <ul>
-                <li>Corporate videos</li>
-                <li>Marketing content</li>
-                <li>Product demonstrations</li>
-                <li>Editing using open-source tools like Kdenlive and Blender</li>
-            </ul>
-        </div>
-    </div>
-    <div class="hpcontent">
-        <div class="left">
-            <h3>Custom Local AI Tool Development</h3>
-            <span>Intelligent Solutions, Tailored to Your Needs</span>
-            <ul>
-                <li>Privacy-focused AI implementations</li>
-                <li>Open-source machine learning frameworks</li>
-                <li>Custom algorithms and model training</li>
-                <li>Secure, on-premise AI solutions</li>
-            </ul>
-        </div>
-        <div class="right">
-            <h3>Marketing & SEO</h3>
-            <span>Strategic Digital Visibility</span>
-            <ul>
-                <li>Organic search optimization</li>
-                <li>Content marketing strategies</li>
-                <li>Analytics and performance tracking</li>
-                <li>Ethical, transparent SEO practices</li>
-            </ul>
-        </div>
-    </div>
-    <div class="content">
-        <h2>Our Commitment</h2>
-        <strong>Security and Open Source at Our Core</strong>
+<section class="hero">
+	<p class="eyebrow">Arthur Reeder Tech &middot; Southern California</p>
+	<h1>Friendly Neighborhood<br />Technology Craftsman</h1>
+	<p class="hero-sub">
+		Websites, video, and private local AI tools — built with open-source
+		software, with security and your privacy at the core. No vendor
+		lock-in, no black boxes, no nonsense.
+	</p>
+	<div class="hero-actions">
+		<a class="btn btn-primary" href="#services">Explore services</a>
+		<a class="btn btn-ghost" href="/about/">About Arthur</a>
+	</div>
+	<ul class="hero-chips" aria-label="What to expect">
+		<li>Open source first</li>
+		<li>Privacy respecting</li>
+		<li>No vendor lock-in</li>
+		<li>20+ years of experience</li>
+	</ul>
+</section>
 
-        <p>
-            We believe in technology that respects user privacy and promotes transparency. That's why we:
-        </p>
-        <ul>
-            <li>Prioritize open-source software</li>
-            <li>Implement robust security protocols</li>
-            <li>Personalized client experiences</li>
-            <li>Commitment to open-source principles</li>
-        </ul>
-    </div>
-</div>
+{{ with .Content }}
+<section class="intro prose">
+	{{ . }}
+</section>
+{{ end }}
+
+<section class="services" id="services">
+	<p class="eyebrow">What I do</p>
+	<h2 class="section-title">Services</h2>
+
+	<div class="card-grid">
+		<article class="card">
+			<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+			<h3>Website Design</h3>
+			<p class="card-tagline">Custom, Responsive Web Solutions</p>
+			<ul>
+				<li>Crafted with open-source technologies</li>
+				<li>Mobile-first design approach</li>
+				<li>Emphasis on user experience and performance</li>
+				<li>Secure hosting and development practices</li>
+			</ul>
+		</article>
+
+		<article class="card">
+			<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+			<h3>Video Production</h3>
+			<p class="card-tagline">Professional Storytelling through Visual Media</p>
+			<ul>
+				<li>Corporate videos</li>
+				<li>Marketing content</li>
+				<li>Product demonstrations</li>
+				<li>Editing using open-source tools like Kdenlive and Blender</li>
+			</ul>
+		</article>
+
+		<article class="card">
+			<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/><path d="M9 17h6"/></svg>
+			<h3>Custom Local AI Tool Development</h3>
+			<p class="card-tagline">Intelligent Solutions, Tailored to Your Needs</p>
+			<ul>
+				<li>Privacy-focused AI implementations</li>
+				<li>Open-source machine learning frameworks</li>
+				<li>Custom algorithms and model training</li>
+				<li>Secure, on-premise AI solutions</li>
+			</ul>
+		</article>
+
+		<article class="card">
+			<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v3l2 2"/></svg>
+			<h3>Marketing &amp; SEO</h3>
+			<p class="card-tagline">Strategic Digital Visibility</p>
+			<ul>
+				<li>Organic search optimization</li>
+				<li>Content marketing strategies</li>
+				<li>Analytics and performance tracking</li>
+				<li>Ethical, transparent SEO practices</li>
+			</ul>
+		</article>
+	</div>
+</section>
+
+<section class="commitment">
+	<p class="eyebrow">Our Commitment</p>
+	<h2 class="section-title">Security and Open Source at Our Core</h2>
+	<p class="commitment-lede">
+		We believe in technology that respects user privacy and promotes
+		transparency. That&rsquo;s why we:
+	</p>
+	<ul class="check-list">
+		<li>Prioritize open-source software</li>
+		<li>Implement robust security protocols</li>
+		<li>Personalized client experiences</li>
+		<li>Commitment to open-source principles</li>
+	</ul>
+</section>
+
+<section class="cta-band">
+	<h2>Have a project in mind?</h2>
+	<p>Start with a conversation. You&rsquo;ll find Arthur writing and building in the open — or say hello on Mastodon.</p>
+	<div class="hero-actions">
+		<a class="btn btn-primary" href="https://mastodon.sdf.org/@art" rel="me">Say hello on Mastodon</a>
+		<a class="btn btn-ghost" href="https://arthur.pizza">Visit arthur.pizza</a>
+	</div>
+</section>
 
 {{ partial "footer.html" . }}

@@ -1,6 +1,12 @@
-baseURL = "https://arthurreeder.tech"
+baseURL = "https://arthurreeder.tech/"
+languageCode = "en-us"
 title = "Arthur Reeder Tech"
 theme = "art"
+
+[params]
+  description = "Arthur Reeder Tech — friendly, open-source technology help in Southern California: custom websites, video production, private local AI tools, and honest, transparent SEO."
+  author = "Arthur Reeder"
+  tagline = "Friendly Neighborhood Technology Craftsman"
 
 [permalinks]
   [permalinks.page]
